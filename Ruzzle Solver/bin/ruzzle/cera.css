@@ -1,0 +1,17 @@
+
+.list-view .list-cell:even {
+-fx-background-color: #333333;
+-fx-text-fill: white;
+}
+.list-view .list-cell:odd {
+-fx-background-color: #444444;
+-fx-text-fill: white;
+}
+.list-view:focused .list-cell:filled:focused:selected {
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+}
+.list-cell:focused {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}

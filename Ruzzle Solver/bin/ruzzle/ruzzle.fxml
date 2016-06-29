@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="389.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ruzzle.ruzzleController">
+   <center>
+      <HBox prefHeight="389.0" prefWidth="750.0" style="-fx-background-color: #333333;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="389.0" prefWidth="379.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <TextField fx:id="char00" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="83.0" prefWidth="89.0" style="-fx-background-color: #444444; -fx-text-fill: white;">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char01" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="136.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char02" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="134.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char03" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="147.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char10" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="151.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char11" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="147.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char12" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="163.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char13" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="218.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char20" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="212.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char21" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="198.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char22" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="198.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char23" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="171.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char30" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="156.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char31" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="198.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char32" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" prefHeight="205.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="char33" accessibleRole="BUTTON" alignment="CENTER" editable="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#checkValidate" onContextMenuRequested="#checkValidate" onMouseClicked="#checkValidate" prefHeight="218.0" prefWidth="79.0" style="-fx-background-color: #444444; -fx-text-fill: white;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </opaqueInsets>
+            </GridPane>
+            <VBox alignment="CENTER" prefHeight="389.0" prefWidth="328.0">
+               <children>
+                  <Button fx:id="BTNGENERATE" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#CLICKGENERATE" prefHeight="5.0" prefWidth="313.0" style="-fx-background-color: #444444;" text="Genera " textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <ListView fx:id="LIST_SOLUTION" onContextMenuRequested="#checkValidate" onMouseClicked="#checkValidate" prefHeight="287.0" prefWidth="313.0" style="-fx-background-color: #222222; -fx-text-fill: #ffffff;" stylesheets="@cera.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <ProgressBar fx:id="progressbar" prefHeight="23.0" prefWidth="367.0" progress="0.0" style="-fx-control-inner-background: #444444; -fx-accent: orange;">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ProgressBar>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
